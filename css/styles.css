@@ -1,0 +1,16 @@
+@import "./styleguide.css";
+
+.header {
+  background-color: var(--common-white);
+  padding: 16px 0;
+}
+
+.main {
+  background-color: var(--common-white);
+  padding-bottom: 96px;
+}
+
+.footer {
+  padding: 16px;
+  background-color: var(--blue-light);
+}
