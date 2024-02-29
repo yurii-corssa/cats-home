@@ -94,6 +94,37 @@
   text-align: left;
 }
 
+.blog {
+  display: grid;
+  gap: 48px;
+}
+
+.blog-link {
+  display: grid;
+  gap: 20px;
+  color: var(--common-black);
+}
+
+@media (min-width: 768px) {
+  .blog {
+    gap: 36px;
+  }
+
+  .blog-link {
+    grid-template-columns: 264px 1fr;
+    gap: 24px;
+  }
+}
+
+.blog-title {
+  margin-bottom: 12px;
+}
+
+.blog-text {
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
 .footer {
   padding: 16px;
   background-color: var(--blue-light);
