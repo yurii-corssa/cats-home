@@ -80,7 +80,7 @@
   background-color: rgba(18, 18, 22, 0.5);
 }
 
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .overlay {
     padding: 24px 48px;
   }
@@ -105,7 +105,7 @@
   color: var(--common-black);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .blog {
     gap: 36px;
   }
@@ -123,6 +123,59 @@
 .blog-text {
   line-height: 24px;
   letter-spacing: 0.5px;
+}
+
+.socials-title {
+  margin-bottom: 24px;
+}
+
+.socials-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .socials-list {
+    gap: 24px;
+  }
+}
+
+.socials-item {
+  border-radius: 16px;
+}
+
+.socials-item:nth-child(1) {
+  background-color: var(--navy);
+}
+
+.socials-item:nth-child(2) {
+  background-color: var(--pink);
+}
+
+.socials-item:nth-child(3) {
+  background-color: var(--scarlet);
+}
+
+.socials-item:nth-child(4) {
+  background-color: var(--turquoise);
+}
+
+.socials-item:nth-child(5) {
+  background-color: var(--yellow);
+}
+
+.socials-item:nth-child(6) {
+  background-color: var(--lilac);
+}
+
+.socials-item-link {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 16px;
+  justify-items: center;
+  align-items: center;
+  padding: 8px;
 }
 
 .footer {
