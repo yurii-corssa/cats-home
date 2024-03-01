@@ -80,7 +80,7 @@
   background-color: rgba(18, 18, 22, 0.5);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .overlay {
     padding: 24px 48px;
   }
@@ -92,6 +92,37 @@
   line-height: 20px;
   letter-spacing: 0.5px;
   text-align: left;
+}
+
+.longread {
+  display: grid;
+  gap: 96px;
+}
+
+@media screen and (min-width: 1280px) {
+  .longread {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    grid-template-areas:
+      "b b s"
+      "b b s"
+      "b b ."
+      "b b m"
+      "b b m"
+      "b b .";
+  }
+
+  .blog {
+    grid-area: b;
+  }
+
+  .socials {
+    grid-area: s;
+  }
+
+  .movie {
+    grid-area: m;
+  }
 }
 
 .blog {
@@ -182,9 +213,8 @@
   margin-bottom: 24px;
 }
 
-.movie-link {
+.movie-preview {
   position: relative;
-  height: 100%;
 }
 
 .movie-play-btn {
